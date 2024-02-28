@@ -1,0 +1,540 @@
+/* roboto-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Robotouch';
+    font-style: normal;
+    font-weight: 300;
+    src: url('roboto/roboto-v30-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Robotolotin' ;
+    font-style: normal;
+    font-weight: 400;
+    src: url('roboto/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Robotobesh';
+    font-style: normal;
+    font-weight: 500;
+    src: url('roboto/roboto-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Robotoyetti';
+    font-style: normal;
+    font-weight: 700;
+    src: url('roboto/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Robototoqqiz';
+    font-style: normal;
+    font-weight: 900;
+    src: url('roboto/roboto-v30-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+:root {
+	--header-outer-height: 110px;
+	--header-inner-height: 70px;
+	--header-height-difference: calc(
+		var(--header-outer-height) - var(--header-inner-height)
+	);
+	--header-bg: #fff;
+}
+body {
+  background-color:#e4e4e4;
+	position: relative;
+}
+.container{
+	background-color: #ffffff;
+    max-width: 1600px;
+    height: 3310px;
+    margin: 0px auto;
+    padding: 0;
+}
+.responsive-wrapper {
+	width: 90%;
+	max-width: 1280px;
+	margin: 0px auto;
+}
+a{
+    text-decoration: none;
+}
+/* Sticky header */
+.header-outer {
+	/* Make it stick */
+    border-bottom:2px solid rgba(2, 132, 245, 0.269);
+	height: var(--header-outer-height);
+	top: calc(
+		var(--header-height-difference) * -1
+	); /* Multiply by -1 to get a negative value */
+	display: flex;
+	align-items: center;
+	/* Other */
+	background-color: var(--header-bg);
+}
+.header-inner {
+	/* Make it stick */
+	height: var(--header-inner-height);
+	top: 0;
+	/* Other */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+/* Styling of other elements */
+.header-navigation {
+	display: flex;
+    gap: 30px;
+	flex-wrap: wrap;
+}
+.header-navigation a,
+.header-navigation button {
+	font-size: 1.125rem;
+	color: inherit;
+	margin-left: 1.75rem;
+	position: relative;
+	font-weight: 500;
+}
+.header-navigation a {
+	display: none;
+	font-size: 1.125rem;
+	color:black;
+	text-decoration: none;
+    font-family: 'Robotolotin' ;
+}
+.header-navigation a:hover{
+    color: rgba(0, 130, 244, 1);
+    
+}
+.header-navigation a:hover:after{
+	transform: scalex(1);
+}
+.header-navigation a:after {
+    top: 68px;
+	transition: 0.25s ;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: currentcolor;
+	transform: scalex(0);
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+}
+@media (min-width: 800px) {
+    .container{
+        max-width: 1600px;
+        margin: 0px auto;
+    }
+	.header-navigation a {
+		display: inline-block;
+	}
+
+	.header-navigation button {
+		display: none;
+	}
+}
+a button{
+    padding: 20px 25px;
+    background-color: rgba(0, 130, 244, 1);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: 'Robotolotin' ;
+  }
+  a button:hover{
+      background: rgba(0, 130, 244, 1);
+      color: #fff;
+      box-shadow: 0 0 5px rgba(0, 130, 244, 1),
+                  0 0 25px rgba(0, 130, 244, 1),
+                  0 0 50px rgba(0, 130, 244, 1),
+                  0 0 200px rgba(0, 130, 244, 1);
+  }
+  .main_top{
+    display: flex;
+    margin-top: 100px;
+    align-items:center;
+    justify-content: center;    
+	max-width: 1600px;
+    gap: 200px;
+  }
+  .main_top_left{
+    width: 531px;
+    height: 341px;
+  }
+  .main_top_left a{
+    font-family: 'Robotolotin';
+    color:rgba(0, 128, 253, 1);
+    font-size: 25px;
+  }
+  .main_top_left a:hover{
+    color:rgb(37, 98, 159);
+  }
+  .main_top_left h1{
+    margin-top: 0;
+    font-size: 60.55px;
+    font-family: 'Robotoyetti';
+  }
+  .main_top_left h1 strong{
+    color:rgba(0, 130, 244, 1);
+  }
+  .main_top_left p{
+    font-size: 16px;
+    margin-top: -15px;
+    font-family: 'Robotolotin';
+    color:rgba(0, 0, 0, 0.512);
+  }
+  .button{
+    display: flex;
+    gap: 10px;
+  }
+  .buttom1{
+    background-color:rgba(0, 130, 244, 1);
+    padding: 20px 46px;
+    border:none;
+    border-radius:12px;
+    color:#fff;
+    transition: 0.5s;
+    font-size: 20px;
+    font-family: 'Robotobesh';
+  }
+  .buttom1:hover{
+    box-shadow: 0 0 5px rgba(0, 130, 244, 1),
+    0 0 25px rgba(0, 130, 244, 1),
+    0 0 50px rgba(0, 130, 244, 1),
+    0 0 200px rgba(0, 130, 244, 1);
+  }
+  .buttom2{
+    padding: 14px 46px;
+    border:2px solid rgba(0, 130, 244, 0.422);
+    border-radius:12px;
+    display: flex;
+    gap: 10px;
+    align-items:center;
+    background-color:#ffffff;
+    color:#000000;
+    transition: 0.5s;
+    font-size: 20px;
+    font-family: 'Robotobesh';
+  }
+  .buttom2:hover{
+    box-shadow: 0 0 5px rgba(0, 130, 244, 0.422),
+    0 0 25px  rgba(0, 130, 244, 0.422),
+    0 0 50px  rgba(0, 130, 244, 0.422),
+    0 0 200px rgba(0, 130, 244, 0.422);
+  }
+  .main_center{
+    display: flex;
+    margin-top: 100px;
+    align-items:center;
+    justify-content: center;    
+	max-width: 1600px;
+    gap: 200px;
+  }
+  .main_center_right{
+    width: 503px;
+  }
+  .main_center_right a{
+    font-size: 25px;
+    color:rgba(0, 130, 244, 1);
+    font-family: 'Robotobesh';
+    text-transform: uppercase;
+  }
+.main_center_right h1{
+  margin-top: 15px;
+  font-family: 'Robotoyetti';
+  font-size: 49px;
+}
+.main_center_right p{
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: 'Robotolotin' ;
+  color:rgba(0, 0, 0, 0.665);
+}
+.main_midle{
+  margin-top: 170px;
+}
+.main_midle_top{
+  font-family: 'Robotobesh' ;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.main_midle_bottom{
+ display: flex;
+ justify-content: space-evenly;
+}
+.main_midle img{
+  margin-left: 82px;
+  padding-bottom: 15px;
+}
+.card_left{
+  width: 324px;
+  height: 346px;
+  display: flex;
+  flex-direction: column;
+
+}
+.card_center{
+  width: 324px;
+  height: 346px;
+  display: flex;
+  flex-direction: column;
+}
+.card_right{
+  width: 324px;
+  height: 346px;
+  display: flex;
+  flex-direction: column;
+}
+.main_midle p{
+  display: table-cell;
+  vertical-align: middle;
+  padding: 30px;
+  font-family: 'Robotolotin' ;
+  font-size: 16px;
+  text-align: center;
+  color:rgba(0, 0, 0, 0.748);
+}
+.main_midle b{
+  text-align: center;
+  font-family: 'Robotobesh';
+  font-size: 28px;
+  letter-spacing: 3px;
+  margin-bottom: -28px;
+  margin-top: 40px;
+}
+.cart_top{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 350px;
+}
+.left_cart p{
+  font-size: 48px;
+  font-family: 'Robotobesh';
+}
+.right_cart{
+  display: flex;
+  gap: 60px;
+}
+.icon_left{
+  padding: 12px 21px 15px 20px;
+  border-radius:50rem;
+  transition: 0.5s;
+}
+.icon_left:hover{
+  background-color:#0086fc2a;
+  border-radius:50%;
+}
+.icon_right{
+  padding: 12px 20px 17px 23px;
+  border-radius:50rem;
+  transition: 0.5s;
+}
+.icon_right:hover{
+  background-color:#0086fc2a;
+  border-radius:50%;
+}
+.cart_bottom{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 67px;
+  margin-left: -150px;
+}
+.cart_bottom_left{
+  position: relative;
+  width: 420px;
+  height: 283px;
+  border:2px solid #0086fc2a;
+  border-radius:10px;
+  box-shadow: 0 0 25px  #1617172a;
+  display: flex;
+  gap: 65px;
+}
+.cart_5{
+  width: 175px;
+  height: 280px;
+  background-color:#0082F4;
+  border-radius:10px 0px 0px 10px;
+}
+.profile{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 35px;
+}
+.profile_left{
+  border-top:2px solid #0082f483 ;
+  width: 30px;
+}
+.text{
+  font-size: 20px;
+  padding: 30px 62px 0px 20px;
+  font-family: 'Robotolotin' ;
+  line-height: 30px;
+  margin-left: -25px;
+}
+.profile_right p{
+  font-size: 20px;
+  font-family: 'Robotolotin' ;
+}
+.cart_img img{
+  position: absolute;
+  border:3px solid #fff;
+  border-radius: 50%;
+  left: 36px;
+  top: 111px;
+}
+.p1{
+  margin: -9px 0px 0px 40px;
+  font-size: 20px;
+  font-family: 'Robotolotin' ;
+  color: #42424294;
+}
+.p1:hover{
+  color: #0082f4d0;
+}
+.sing_up{
+  margin-top: 176px;
+  width: 100%;
+  height: 338px;
+  text-align: center;
+  background-color:#E8ECFF4D;
+}
+.input{
+  margin: auto;
+  width: 480px;
+  height: 82px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 10px;
+  border:2px solid #058aff6b;
+  border-radius:12px;
+}
+.search{
+    position: relative;
+    width: 290px;
+    margin-left: -14px;
+    }
+    .search input{
+     height: 30px;
+     text-indent: 25px;
+     background-color:rgba(41, 52, 73, 1);
+     border:none;
+     color:#000;
+    }
+    .button3{
+      padding: 12px 20px;
+      background-color:#0082F4;
+      border:none;
+      border-radius:12px;
+      display: flex;
+      gap: 10px;
+      align-items:center;
+      color:#ffffff;
+      transition: 0.5s;
+      font-size: 20px;
+      font-family: 'Robotobesh';
+    }
+    .button3:hover{
+      box-shadow: 0 0 5px rgba(0, 130, 244, 0.422),
+      0 0 25px  rgba(0, 130, 244, 0.422),
+      0 0 50px  rgba(0, 130, 244, 0.422),
+      0 0 200px rgba(0, 130, 244, 0.422);
+    }
+    .sing_up h3{
+      color:#058AFF;
+      font-family: 'Robotobesh';
+     padding-top: 75px;
+    }
+    .sing_up p{
+      font-size: 15px;
+      font-family: 'Robotobesh';
+      color: #000000;
+      margin-bottom: 30px;
+    }
+    .footer_top{
+      display: flex;
+      margin-top: 60px;
+      justify-content: space-evenly;
+    }
+    .footer_top_card_1{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer_top_card_1 p{
+      font-size: 25px;
+      font-family: 'Robotobesh';
+    }
+    .footer_top_card_1 a{
+      font-size: 20px;
+      font-family: 'Robotolotin' ;
+      color: #000000b2;
+    }
+    .footer_top_card_1 a:hover{
+      color:#0082F4;
+    }
+    .footer_bottom{
+      margin-top: 51px;
+      display: flex;
+      justify-content: space-around;
+      padding: 45px;
+      width: 100%;
+      height: 120px;
+      background: -webkit-linear-gradient(180deg, #058aff 0%, rgba(58, 56, 207, 0.87) 100%);
+     background: linear-gradient(180deg, #058aff 0%, rgba(58, 56, 207, 0.87) 100%);
+    }
+    .footer_bottom_left{
+      color:#fff;
+      font-family: 'Robotobesh';
+    }
+    .footer_bottom_right{
+      display: flex;
+      align-items:center;
+      gap: 40px;
+    }
+    .card_logo{
+      display: flex;
+      gap: 20px;
+    }
+    .card_logo path:hover{
+      fill: #0101013b;
+  }
+
+  .buttom_fotter{
+    height: 52px;
+    background-color:rgba(0, 130, 244, 1);
+    padding: 10px 36px;
+    border:none;
+    border-radius:12px;
+    color:#fff;
+    transition: 0.5s;
+    font-size: 20px;
+  }
+  .buttom_fotter:hover{
+    box-shadow: 0 0 5px rgba(0, 130, 244, 1),
+    0 0 25px rgba(255, 255, 255, 0.883),
+    0 0 50px rgba(255, 255, 255, 0.626),
+    0 0 200px rgba(255, 255, 255, 0.401);
+  }
