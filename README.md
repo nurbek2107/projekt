@@ -7,7 +7,7 @@
 
 - 🔭 I’m currently working on [soffit](nurbek2107.github.io/soffit_test/)
 
-- 👨‍💻 All of my projects are available at [nurbek2107.github.io/My_Profile/](nurbek2107.github.io/My_Profile/)
+- 👨‍💻 All of my projects are available at [nurbek2107.github.io/projekt/](nurbek2107.github.io/projekt/)
 
 - 📫 How to reach me **abduaxatov007@gmail.com**
 
